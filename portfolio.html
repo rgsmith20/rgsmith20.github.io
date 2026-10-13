@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Riley Smith</title>
+  <style>
+    :root {
+      --bg: #f6f1eb;
+      --text: #1f2a2d;
+      --muted: #5d686d;
+      --card: #ffffff;
+      --accent: #7b8f6a;
+      --border: rgba(31, 42, 45, 0.12);
+      --shadow: 0 18px 35px rgba(31, 42, 45, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #faf6f2 0%, #f0ebe5 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: rgba(255,255,255,0.8);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .site-nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .site-name,
+    .site-nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .site-nav a:not(.site-name) {
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .page-content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 3rem;
+    }
+
+    .eyebrow {
+      margin: 0 0 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #44563f;
+    }
+
+    h1, h2, h3 {
+      margin: 0 0 0.75rem;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+    }
+
+    .bio {
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+      max-width: 680px;
+    }
+
+    .work-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+    }
+
+    .doc-list {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 0;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .doc-list a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.8rem 1.1rem;
+      border-radius: 999px;
+      font-weight: 700;
+      width: fit-content;
+    }
+
+    .site-footer {
+      text-align: center;
+      padding: 1.5rem 1rem 2rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="site-name" href="index.html">Riley Smith</a>
+      <a href="portfolio.html">Portfolio</a>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <section aria-labelledby="documents-heading">
+      <p class="eyebrow">My Work</p>
+      <h1 id="documents-heading">My Documents</h1>
+      <p class="bio">Here are a few of the materials I have prepared as part of my academic and personal portfolio.</p>
+
+      <div class="work-card">
+        <h2>Google Doc</h2>
+        <ul class="doc-list">
+          <li>
+            <a href="https://docs.google.com/document/d/1LMbdRyLFQkDfIJwyNbGM-Q-ZVezm7rKAgJM8tMuDa-A/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+              Open my Google Doc
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Riley Smith</p>
+  </footer>
+</body>
+</html>
